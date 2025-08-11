@@ -7,6 +7,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 app.use("/api/v1", userrouters);
+
 app.get("/", (req, res) => {
   res.send("hello mern");
 });
@@ -19,3 +20,6 @@ dbconntected().then(() => {
     console.log(`server is runnig on port http://${host}:${port}`);
   });
 });
+
+
+module.exports = app; // <-- important for Vercel
