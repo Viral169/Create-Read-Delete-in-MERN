@@ -1,0 +1,84 @@
+/* Container styling */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  font-family: Arial, sans-serif;
+}
+
+/* Card box */
+.signup-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+}
+
+/* Title */
+.signup-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label */
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+.form-input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+}
+
+/* Button */
+.signup-btn {
+  background: #2575fc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.signup-btn:hover {
+  background: #1b5ed9;
+}
+
+/* Mobile responsive */
+@media (max-width: 400px) {
+  .signup-card {
+    width: 90%;
+  }
+}
